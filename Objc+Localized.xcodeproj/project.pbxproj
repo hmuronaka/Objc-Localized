@@ -21,6 +21,9 @@
 		59416F7F199C387900E3662F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59416F61199C387900E3662F /* UIKit.framework */; };
 		59416F87199C387900E3662F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59416F85199C387900E3662F /* InfoPlist.strings */; };
 		59416F89199C387900E3662F /* Objc_LocalizedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59416F88199C387900E3662F /* Objc_LocalizedTests.m */; };
+		59416F99199C3AAF00E3662F /* UIAlertView+Localized.m in Sources */ = {isa = PBXBuildFile; fileRef = 59416F94199C3AAF00E3662F /* UIAlertView+Localized.m */; };
+		59416F9A199C3AAF00E3662F /* UILabel+Localized.m in Sources */ = {isa = PBXBuildFile; fileRef = 59416F96199C3AAF00E3662F /* UILabel+Localized.m */; };
+		59416F9B199C3AAF00E3662F /* UIButton+Localized.m in Sources */ = {isa = PBXBuildFile; fileRef = 59416F98199C3AAF00E3662F /* UIButton+Localized.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		59416F84199C387900E3662F /* Objc+LocalizedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Objc+LocalizedTests-Info.plist"; sourceTree = "<group>"; };
 		59416F86199C387900E3662F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59416F88199C387900E3662F /* Objc_LocalizedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objc_LocalizedTests.m; sourceTree = "<group>"; };
+		59416F93199C3AAF00E3662F /* UIAlertView+Localized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Localized.h"; sourceTree = "<group>"; };
+		59416F94199C3AAF00E3662F /* UIAlertView+Localized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Localized.m"; sourceTree = "<group>"; };
+		59416F95199C3AAF00E3662F /* UILabel+Localized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Localized.h"; sourceTree = "<group>"; };
+		59416F96199C3AAF00E3662F /* UILabel+Localized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Localized.m"; sourceTree = "<group>"; };
+		59416F97199C3AAF00E3662F /* UIButton+Localized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Localized.h"; sourceTree = "<group>"; };
+		59416F98199C3AAF00E3662F /* UIButton+Localized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Localized.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +121,7 @@
 		59416F63199C387900E3662F /* Objc+Localized */ = {
 			isa = PBXGroup;
 			children = (
+				59416F92199C387F00E3662F /* UIKit+Localized */,
 				59416F6C199C387900E3662F /* AppDelegate.h */,
 				59416F6D199C387900E3662F /* AppDelegate.m */,
 				59416F6F199C387900E3662F /* Main.storyboard */,
@@ -150,6 +160,19 @@
 				59416F85199C387900E3662F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59416F92199C387F00E3662F /* UIKit+Localized */ = {
+			isa = PBXGroup;
+			children = (
+				59416F93199C3AAF00E3662F /* UIAlertView+Localized.h */,
+				59416F94199C3AAF00E3662F /* UIAlertView+Localized.m */,
+				59416F95199C3AAF00E3662F /* UILabel+Localized.h */,
+				59416F96199C3AAF00E3662F /* UILabel+Localized.m */,
+				59416F97199C3AAF00E3662F /* UIButton+Localized.h */,
+				59416F98199C3AAF00E3662F /* UIButton+Localized.m */,
+			);
+			name = "UIKit+Localized";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59416F9A199C3AAF00E3662F /* UILabel+Localized.m in Sources */,
 				59416F74199C387900E3662F /* ViewController.m in Sources */,
+				59416F99199C3AAF00E3662F /* UIAlertView+Localized.m in Sources */,
 				59416F6E199C387900E3662F /* AppDelegate.m in Sources */,
 				59416F6A199C387900E3662F /* main.m in Sources */,
+				59416F9B199C3AAF00E3662F /* UIButton+Localized.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
